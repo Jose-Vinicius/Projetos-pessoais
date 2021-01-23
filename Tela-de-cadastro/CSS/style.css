@@ -1,0 +1,89 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+body{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
+.cabecalho {
+    background-color: #264653;
+    width: 93.7vw;
+    margin-left: -25%;
+    padding: 25px;
+    color:white;
+    font-size: 23px;
+    padding-left: 10%;
+}
+
+.cabecalho p{
+    font-size:15px;
+}
+
+.personaldate{
+    margin-top: 4%;
+    margin-bottom:0.1em;
+    line-height: 1.7;
+}
+
+.personaldate label,.contactdate label,.workxp label{
+    font-size: 20px;
+}
+
+.contactdate{
+    margin-bottom:0.3em;
+    line-height: 1.7;
+}
+
+.workxp{
+    margin-top: 0.2em;
+    margin-bottom:0.3em;
+    line-height: 1.7;
+}
+
+#termos {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+#button{
+    padding: 20px;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-radius: 20px;
+    border: none;
+    margin-left: 30%;
+    margin-right: 15%;
+    margin-top: 2%;
+    background-color: #264653;
+    font-size: 15px;
+    color: white;
+    text-transform:uppercase;
+    cursor: pointer;
+}
+
+#fname:focus, #lname:focus, #cpf:focus, #city:focus,#email:focus,#telefone:focus,#intendedposition:focus,#ie:focus,#cep:focus {
+    background-color: rgba(0, 247, 255, 0.315);
+    border-color: darkblue;
+    border-width: 3px;
+}
+#fname, #lname{width: 165px;}
+#estado, #city{width: 230px;}
+#gender, #age{width: 168px;}
+#cpf, #cep{width: 250px;}
+#email{width: 552px;}
+#telefone{width: 110px;}
+#ie{width: 185px;}
+#intendedposition{width: 250px;}
+
+#button:hover{
+    background-color: #1e7091;
+}

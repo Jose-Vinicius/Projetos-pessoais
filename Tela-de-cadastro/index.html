@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>TCEO-Cadastre-se</title>
+</head>
+<body>
+    <div class="cabecalho">
+        <h1>Cadastre-se</h1>
+        <p>Preencha os campos a seguir, os campos com <strong>*</strong> são obrigatorios:</p>
+    </div>
+    <form>
+        <div class="personaldate">
+            <label for="fname"><strong>Primeiro nome:*</strong></label> 
+            <input type="text" id="fname" name="" required>
+            <label for="lname"><strong>Ultimo nome:*</strong></label>
+            <input type="text" id="lname" name="" required> <br>
+            <label for="age"><strong>Data de nascimento*</strong></label>
+            <input type="date" id="age" name="" min="1930-12-30" max="2003-12-31" required>
+                <label for="gender"><strong>Genero*:</strong></label>
+                <select name="" id="gender">
+                    <option value="null"></option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="outro">outros</option>
+                </select> <br>
+            <label for="cpf"><strong>CPF*</strong></label>
+            <input type="text" id="cpf" name="" required> 
+            <label for="cep"><strong>CEP*</strong></label>
+            <input type="text" id="cep" name="" required> <br>
+            <label for="estado"><strong>Estado*</strong></label>
+            <select name="" id="estado" required>
+                <option value="null"></option>
+                <option value="ac">Acre</option>
+                <option value="al">Alagoas</option>
+                <option value="ap">Amapá</option>
+                <option value="am">Amazonas</option>
+                <option value="ba">Bahia</option>
+                <option value="ce">Ceará</option>
+                <option value="df">Distrito Federal</option>
+                <option value="es">Espirito Santo</option>
+                <option value="go">Goiás</option>
+                <option value="ma">Maranão</option>
+                <option value="mt">Mato Grosso</option>
+                <option value="ms">Mato Grosso do sul</option>
+                <option value="mg">Minas Gerais</option>
+                <option value="pa">Pará</option>
+                <option value="pb">Paráiba</option>
+                <option value="pr">Paraná</option>
+                <option value="pe">Pernambuco</option>
+                <option value="pi">Piauí</option>
+                <option value="rj">Rio de janeiro</option>
+                <option value="rn">Rio grande do norte</option>
+                <option value="rs">Rio grande do sul</option>
+                <option value="ro">Rondônia</option>
+                <option value="rr">Roraima</option>
+                <option value="sc">Santa catarina</option>
+                <option value="sp">São paulo</option>
+                <option value="se">Sergipe</option>
+                <option value="to">Tocantins</option>
+            </select>
+            <label for="city"><strong>Cidade*</strong></label>
+            <input type="text" id="city" name="" required> <br>
+            <label for="ie"><strong>Instituição de Ensino*</strong></label>
+            <input type="text" id="ie" name=""> 
+            <select name="" id="escolaridade" required>
+                <option value="ge">Selecione o grau de escolaridade*</option>
+                <option value="fi">Fundamental incompleto</option>
+                <option value="fc">Fundamental completo</option>
+                <option value="mi">Medio incompleto</option>
+                <option value="mc">Medio completo</option>
+                <option value="si">Superior incompleto</option>
+                <option value="sc">Superior completo</option>
+                <option value="pgi">pós-graduação incompleto</option>
+                <option value="pgc">pós-graduação completo</option>
+            </select> 
+        </div>
+        <div class="contactdate">
+            <label for="email"><strong>Email*</strong></label>
+            <input type="email" id="email" name="" required> <br>
+            <label for="telefone"><strong>Telefone de contato:*</strong></label>
+            <input type="tel" id="telefone" name="" required>
+            <input type="checkbox" id="whatsapp" name=""> 
+            <label for="telefone">Esse numero possui WhatsApp ?</label>
+        </div>
+        <div class="workxp">
+            <label for="intendedposition"><strong>Cargo pretendido</strong></label>
+            <input type="text" id="intendedposition" name="" >
+            <select name="" id="salario">
+                <option value="ge">Selecione o salario pretendido</option>
+                <option value="s1">Até R$ 1.100</option>
+                <option value="s2">De R$ 1.100 até R$ 2.200</option>
+                <option value="s3">De R$ 2.200 até R$ 4.400</option>
+                <option value="s4">De R$ 4.400 até R$ 10.000</option>
+                <option value="s5">Acima de R$ 10.000</option>
+            </select>
+        </div>
+        <input type="checkbox" name="" id="licence" required>
+        <label for="licence" id="termos">Li e Concordo com os termos de privacidade</label> <br>
+        <input type="submit" value="Enviar" id="button">
+    </form>
+</body>
+</html>
